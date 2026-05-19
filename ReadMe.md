@@ -3,8 +3,8 @@ Parse and format [LCOV](https://github.com/linux-test-project/lcov) coverage rep
 in [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript).
 
 ## Documentation
-- [User guide](https://github.com/CedX/Lcov.js/tree/main/docs)
-- [Examples](https://github.com/CedX/Lcov.js/tree/main/example)
+- [User guide](https://github.com/CedX/Lcov.js/tree/main/Documentation)
+- [Examples](https://github.com/CedX/Lcov.js/tree/main/Examples)
 
 ## Development
 - [Git repository](https://github.com/CedX/Lcov.js)

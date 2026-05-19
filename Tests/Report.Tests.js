@@ -7,7 +7,7 @@ import {describe, it} from "node:test";
  * Tests the features of the {@link Report} class.
  */
 describe("Report", () => {
-	const coverage = readFileSync("res/Lcov.info", "utf8");
+	const coverage = readFileSync("Resources/Lcov.info", "utf8");
 
 	describe("parse()", () => {
 		const report = Report.parse(coverage);

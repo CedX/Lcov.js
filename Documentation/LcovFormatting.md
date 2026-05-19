@@ -33,5 +33,5 @@ end_of_record
 ```
 
 > [!TIP]
-> See the [source code](https://github.com/CedX/Lcov.js/tree/main/src) of this library
+> See the [source code](https://github.com/CedX/Lcov.js/tree/main/Sources) of this library
 > for detailed information on the available classes.
