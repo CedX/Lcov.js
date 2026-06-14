@@ -13,7 +13,7 @@ try {
   console.log(JSON.stringify(report));
 }
 catch (error) {
-  console.error(error instanceof SyntaxError ? error.message : error);
+  console.error(Error.isError(error) ? error.message : error);
 }
 ```
 
