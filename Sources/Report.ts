@@ -1,6 +1,6 @@
-import {BranchCoverage, BranchData} from "./BranchCoverage.js";
-import {FunctionCoverage, FunctionData} from "./FunctionCoverage.js";
-import {LineCoverage, LineData} from "./LineCoverage.js";
+import {BranchData} from "./BranchCoverage.js";
+import {FunctionData} from "./FunctionCoverage.js";
+import {LineData} from "./LineCoverage.js";
 import {SourceFile} from "./SourceFile.js";
 import {Tokens} from "./Tokens.js";
 
@@ -38,7 +38,7 @@ export class Report {
 	static parse(coverage: string): Report { // eslint-disable-line max-statements
 		const report = new this("");
 		let offset = 0;
-		let sourceFile = new SourceFile("", {branches: new BranchCoverage, functions: new FunctionCoverage, lines: new LineCoverage});
+		let sourceFile = SourceFile.withCoverage("");
 
 		for (let line of coverage.split(/\r?\n/g)) {
 			offset++;
@@ -110,7 +110,7 @@ export class Report {
 					break;
 				}
 				case Tokens.SourceFile: {
-					sourceFile = new SourceFile(data[0], {branches: new BranchCoverage, functions: new FunctionCoverage, lines: new LineCoverage});
+					sourceFile = SourceFile.withCoverage(data[0]);
 					break;
 				}
 				case Tokens.EndOfRecord: {

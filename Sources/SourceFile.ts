@@ -1,6 +1,6 @@
-import type {BranchCoverage} from "./BranchCoverage.js";
-import type {FunctionCoverage} from "./FunctionCoverage.js";
-import type {LineCoverage} from "./LineCoverage.js";
+import {BranchCoverage} from "./BranchCoverage.js";
+import {FunctionCoverage} from "./FunctionCoverage.js";
+import {LineCoverage} from "./LineCoverage.js";
 import {Tokens} from "./Tokens.js";
 
 
@@ -39,6 +39,15 @@ export class SourceFile {
 		this.functions = options.functions ?? null;
 		this.lines = options.lines ?? null;
 		this.path = path;
+	}
+
+	/**
+	 * Creates a new instance with default coverage values.
+	 * @param path The path to the source file.
+	 * @returns The newly created source file.
+	 */
+	static withCoverage(path: string): SourceFile {
+		return new this(path, {branches: new BranchCoverage, functions: new FunctionCoverage, lines: new LineCoverage});
 	}
 
 	/**
