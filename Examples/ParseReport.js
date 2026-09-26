@@ -6,7 +6,7 @@ import {readFile} from "node:fs/promises";
 try {
 	const report = Report.parse(await readFile("/path/to/lcov.info", "utf8"));
 	console.log(`The coverage report contains ${report.sourceFiles.length} source files:`);
-	console.log(JSON.stringify(report));
+	console.log(JSON.stringify(report, null, 2));
 }
 catch (error) {
 	console.error(Error.isError(error) ? error.message : error);
