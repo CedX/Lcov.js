@@ -1,6 +1,6 @@
 # LCOV Formatting
-Each class provided by this library has a dedicated `toString()` method returning the corresponding data formatted as [LCOV](https://github.com/linux-test-project/lcov) string.
-All you have to do is to create the adequate structure using these different classes, and to export the final result:
+Each type provided by this library has a dedicated `toString()` method returning the corresponding data formatted as [LCOV](https://github.com/linux-test-project/lcov) string.
+All you have to do is to create the adequate structure using these different types, and to export the final result:
 
 ```typescript
 import console from "node:console";
@@ -34,4 +34,4 @@ end_of_record
 
 > [!TIP]
 > See the [source code](https://github.com/CedX/Lcov.js/tree/main/Sources) of this library
-> for detailed information on the available classes.
+> for detailed information on the available types.
