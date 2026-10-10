@@ -1,5 +1,4 @@
 import {BranchData, FunctionData, LineData, Report, SourceFile} from "@cedx/lcov";
-import * as chai from "chai";
 import {readFileSync} from "fs";
 
 /**
@@ -7,7 +6,6 @@ import {readFileSync} from "fs";
  */
 describe("Report", () => {
 	const coverage = readFileSync("Resources/Lcov.info", "utf8");
-	const should = chai.should();
 
 	context("parse()", () => {
 		const report = Report.parse(coverage);

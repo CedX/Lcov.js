@@ -1,5 +1,4 @@
 import {LineCoverage, LineData} from "@cedx/lcov";
-import "chai/register-should.js";
 
 /**
  * Tests the features of the {@link LineCoverage} class.
