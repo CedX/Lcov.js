@@ -21,7 +21,7 @@ describe("FunctionCoverage", () => {
 describe("FunctionData", () => {
 	context("toString()", () => {
 		it("should return a format like 'FN:<lineNumber>,<functionName>\\nFNDA:<executionCount>,<functionName>'", () => {
-			new FunctionData().toString().should.equal("FN:0,\nFNDA:0,FOO");
+			new FunctionData().toString().should.equal("FN:0,\nFNDA:0,");
 			new FunctionData({executionCount: 3, functionName: "main", lineNumber: 127}).toString().should.equal("FN:127,main\nFNDA:3,main");
 		});
 	});
