@@ -1,5 +1,10 @@
 # Changelog
 
+## Version [2026.10.0](https://github.com/CedX/Lcov.js/compare/v11.0.0...v2026.10.0)
+- Breaking change: raised the required [Node.js](https://nodejs.org) version.
+- Added the `SourceFile::withCoverage()` method.
+- Switched to a year-based versioning.
+
 ## Version [11.0.0](https://github.com/CedX/Lcov.js/compare/v10.1.0...v11.0.0)
 - Breaking change: changed the output of the `FunctionData.toString()` method.
 - Breaking change: removed the `options` parameter from the `FunctionData.toString()` method.
